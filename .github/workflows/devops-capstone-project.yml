@@ -28,10 +28,10 @@ jobs:
         cache: 'npm'
     - name: npm install
       run: npm ci
-      working-directory: ./hello-world
+      working-directory: ./capstone_project/hello-world
     - name: npm build
       run: npm run build --if-present
-      working-directory: ./hello-world
+      working-directory: ./capstone_project/hello-world
     - name: npm test
       run: npm test
-      working-directory: ./hello-world
+      working-directory: ./capstone_project/hello-world
