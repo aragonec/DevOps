@@ -28,6 +28,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: ./capstone_project/hello-world
     - name: npm install
       run: npm ci
     - name: npm build
