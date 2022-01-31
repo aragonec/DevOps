@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  ansible:
+    build:
+      context: ./hello-world
+      dockerfile: Dockerfile
+    container_name: helloworld
+    volumes:
+      - type: bind
+        source: ./ansible_files
+        target: /home/helloworld/ansible_files
